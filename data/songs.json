@@ -1,0 +1,26 @@
+{
+  "chennai": {
+    "songs": [
+      {
+        "title": "Hayyoda (From - Jawan)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song1.mp3"
+      },
+      {
+        "title": "Naa Ready (From - Leo)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song2.mp3"
+      }
+    ],
+    "albums": [
+      {
+        "title": "Metro Melodies",
+        "cover": "https://cdn.example.com/albums/metro.jpg"
+      },
+      {
+        "title": "Night Raga",
+        "cover": "https://cdn.example.com/albums/night-raga.jpg"
+      }
+    ]
+  }
+}
