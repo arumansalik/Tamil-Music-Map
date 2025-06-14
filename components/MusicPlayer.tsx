@@ -4,8 +4,9 @@ import { useMusic } from '@/context/MusicPlayerContext'
 import ReactHowler from 'react-howler'
 import { useEffect, useRef, useState } from 'react'
 import {
-  Play, Pause, SkipBack, SkipForward, Volume2, VolumeX
+  Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, MessageCircle
 } from 'lucide-react'
+import songsData from '@/data/songs.json'
 
 const MusicPlayer = () => {
   const { currentSong, isPlaying, playSong, pauseSong } = useMusic()
@@ -15,35 +16,20 @@ const MusicPlayer = () => {
   const [isMuted, setIsMuted] = useState(false)
   const playerRef = useRef<ReactHowler>(null)
 
-  const [playlist] = useState(() => {
-    // Dummy playlist array (replace with context/global if needed)
-    return [
-      {
-        title: 'Sample Song 1',
-        artist: 'Local Artist',
-        url: '/sample-music/song1.mp3',
-        cover: '/covers/song1.jpg',
-      },
-      {
-        title: 'Sample Song 2',
-        artist: 'Another Artist',
-        url: '/sample-music/song2.mp3',
-        cover: '/covers/song2.jpg',
-      }
-    ]
-  })
+  // Get all songs from all cities for global playlist
+  const globalPlaylist = Object.values(songsData).flatMap((cityData) => cityData.songs || [])
 
-  const currentIndex = playlist.findIndex(song => song.url === currentSong?.url)
+  const currentIndex = globalPlaylist.findIndex(song => song.url === currentSong?.url)
 
   const handleNext = () => {
-    if (currentIndex < playlist.length - 1) {
-      playSong(playlist[currentIndex + 1])
+    if (currentIndex < globalPlaylist.length - 1) {
+      playSong(globalPlaylist[currentIndex + 1])
     }
   }
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      playSong(playlist[currentIndex - 1])
+      playSong(globalPlaylist[currentIndex - 1])
     }
   }
 
@@ -89,6 +75,9 @@ const MusicPlayer = () => {
         <div>
           <h4 className="font-semibold text-sm">{currentSong.title}</h4>
           <p className="text-xs text-gray-300">{currentSong.artist}</p>
+          <div className="text-xs text-green-400 flex items-center gap-1 mt-1">
+            <MessageCircle size={12} /> "{currentSong.description || 'Let the rhythm take you!'}"
+          </div>
         </div>
       </div>
 

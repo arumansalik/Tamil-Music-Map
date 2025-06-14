@@ -4,22 +4,134 @@
       {
         "title": "Hayyoda (From - Jawan)",
         "artist": "Anirudh Ravichander",
-        "url": "/sample-music/song1.mp3"
+        "url": "/sample-music/song1.mp3",
+        "cover": "/covers/song1.jpg"
       },
       {
         "title": "Naa Ready (From - Leo)",
         "artist": "Anirudh Ravichander",
-        "url": "/sample-music/song2.mp3"
-      }
-    ],
-    "albums": [
-      {
-        "title": "Metro Melodies",
-        "cover": "https://cdn.example.com/albums/metro.jpg"
+        "url": "/sample-music/song2.mp3",
+        "cover": "/covers/song2.jpg"
       },
       {
-        "title": "Night Raga",
-        "cover": "https://cdn.example.com/albums/night-raga.jpg"
+        "title": "Hayyoda (From - Jawan)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song1.mp3",
+        "cover": "/covers/song1.jpg"
+      },
+      {
+        "title": "Naa Ready (From - Leo)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song2.mp3",
+        "cover": "/covers/song2.jpg"
+      },
+      {
+        "title": "Hayyoda (From - Jawan)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song1.mp3",
+        "cover": "/covers/song1.jpg"
+      },
+      {
+        "title": "Naa Ready (From - Leo)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song2.mp3",
+        "cover": "/covers/song2.jpg"
+      },
+      {
+        "title": "Hayyoda (From - Jawan)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song1.mp3",
+        "cover": "/covers/song1.jpg"
+      },
+      {
+        "title": "Naa Ready (From - Leo)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song2.mp3",
+        "cover": "/covers/song2.jpg"
+      }
+    ],
+    "playlists": [
+      {
+        "name": "Chennai Love",
+      "description": "Romantic vibes from the heart of Chennai",
+        "cover": "/playlist-covers/chennai-love.jpg",
+        "slug": "chennai-love",
+        "songs": [
+          {
+            "title": "Kadhal Virus",
+            "artist": "Yuvan",
+            "url": "/songs/chennai/kadhal-virus.mp3",
+            "cover": "/covers/kadhal-virus.jpg",
+            "duration": "3:45"
+          },
+          {
+            "title": "Yennai Arindhaal",
+            "artist": "Harris Jayaraj",
+            "url": "/songs/chennai/yennai-arindhaal.mp3",
+            "cover": "/covers/yennai-arindhaal.jpg",
+            "duration": "4:12"
+          }
+        ]
+      },
+      {
+        "name": "Chennai Love",
+      "description": "Romantic vibes from the heart of Chennai",
+        "cover": "/playlist-covers/chennai-love.jpg",
+        "slug": "chennai-love",
+        "songs": [
+          {
+            "title": "Kadhal Virus",
+            "artist": "Yuvan",
+            "url": "/songs/chennai/kadhal-virus.mp3",
+            "cover": "/covers/kadhal-virus.jpg",
+            "duration": "3:45"
+          },
+          {
+            "title": "Yennai Arindhaal",
+            "artist": "Harris Jayaraj",
+            "url": "/songs/chennai/yennai-arindhaal.mp3",
+            "cover": "/covers/yennai-arindhaal.jpg",
+            "duration": "4:12"
+          }
+        ]
+      }
+    ]
+  },
+  "salem": {
+    "songs": [
+      {
+        "title": "Hayyoda (From - Jawan)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song1.mp3",
+        "cover": "/covers/song1.jpg"
+      },
+      {
+        "title": "Naa Ready (From - Leo)",
+        "artist": "Anirudh Ravichander",
+        "url": "/sample-music/song2.mp3",
+        "cover": "/covers/song2.jpg"
+      }
+    ],
+    "playlists": [
+      {
+        "name": "Salem Love",
+        "cover": "/playlist-covers/chennai-love.jpg",
+        "songs": [
+          {
+            "title": "Kadhal Virus",
+            "artist": "Yuvan",
+            "url": "/songs/chennai/kadhal-virus.mp3",
+            "cover": "/covers/kadhal-virus.jpg",
+            "duration": "3:45"
+          },
+          {
+            "title": "Yennai Arindhaal",
+            "artist": "Harris Jayaraj",
+            "url": "/songs/chennai/yennai-arindhaal.mp3",
+            "cover": "/covers/yennai-arindhaal.jpg",
+            "duration": "4:12"
+          }
+        ]
       }
     ]
   }
